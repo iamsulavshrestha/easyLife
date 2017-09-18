@@ -5,6 +5,7 @@ if [ -e "$HOME/.vimrc" ]; then
     rm "$HOME/.vimrc"
 fi
 if [ ! -h "$HOME/.vimrc" ]; then
-    ln -s  ~/workspaces/bash/conf/vimrc ~/.vimrc
+#    ln -s  ~/workspaces/bash/conf/vimrc ~/.vimrc
+    ln -s "$PWD/conf/vimrc" ~/.vimrc
     vim +PluginInstall +qall
 fi
