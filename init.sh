@@ -1,4 +1,5 @@
 apt update
 apt upgrade -y
-#~/workspaces/bash/setup/vim.sh
+# setting up vim
+echo "installing and setting up vim"
 . setup/vim.sh
