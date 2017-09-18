@@ -1,3 +1,4 @@
 apt update
 apt upgrade -y
-./setup/vim.sh
+#~/workspaces/bash/setup/vim.sh
+. setup/vim.sh
