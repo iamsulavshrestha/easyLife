@@ -2,5 +2,5 @@
 
 while read i;
 	do wget "$i" -P ~/Downloads/;
-done < $PWD/downloadList.txt
+done < "$PWD"/ubuntu/downloadList.txt
 
