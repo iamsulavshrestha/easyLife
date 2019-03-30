@@ -1,10 +1,12 @@
-if [ ! -e "$HOME/.vim/pack/vivid/opt/Vivid.vim" ]; then
-#    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    git clone https://github.com/axvr/vivid.vim ~/.vim/pack/vivid/opt/Vivid.vim
-fi
+#installing vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+
 if [ -e "$HOME/.vimrc" ]; then
     rm "$HOME/.vimrc"
 fi
 
     cp "$PWD/vimrc" ~/.vimrc
-    vim +PluginInstall +qall
+    vim +PlugInstall

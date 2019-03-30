@@ -1,20 +1,31 @@
-packadd Vivid.vim " Required
+call plug#begin('~/.vim/plugged')
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'valloric/youcompleteme'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
-Plugin 'tpope/vim-repeat'
-Plugin 'mattn/emmet-vim'
-Plugin 'thaerkh/vim-workspace'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'hail2u/vim-css3-syntax'
+
+Plug 'tpope/vim-fugitive'
+Plug 'git://git.wincent.com/command-t.git'
+Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-surround'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'airblade/vim-gitgutter'
+Plug 'valloric/youcompleteme'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-repeat'
+Plug 'mattn/emmet-vim'
+Plug 'thaerkh/vim-workspace'
+Plug 'jiangmiao/auto-pairs'
+Plug 'hail2u/vim-css3-syntax'
+
+"automatically opening nerd tree when file specified
+autocmd StdinReadPre * let s:std_in=1
+
+" automaticall opening nerd tree on current directory
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+
+
+call plug#end()
 
