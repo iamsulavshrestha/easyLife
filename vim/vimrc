@@ -18,7 +18,7 @@ Plug 'mattn/emmet-vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'hail2u/vim-css3-syntax'
-Plugi 'phpactor/phpactor', {'do': 'composer install', ' for': 'php'}
+Plug 'phpactor/phpactor', {'do': 'composer install', ' for': 'php'}
 
 "Require ncm2 and this plugin
 Plug 'ncm2/ncm2'
