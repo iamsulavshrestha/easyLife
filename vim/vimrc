@@ -18,6 +18,12 @@ Plug 'mattn/emmet-vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'hail2u/vim-css3-syntax'
+Plugi 'phpactor/phpactor', {'do': 'composer install', ' for': 'php'}
+
+"Require ncm2 and this plugin
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'phpactor/ncm2-phpactor'
 
 "automatically opening nerd tree when file specified
 autocmd StdinReadPre * let s:std_in=1
