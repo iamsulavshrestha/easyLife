@@ -18,10 +18,16 @@ Plug 'mattn/emmet-vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'jiangmiao/auto-pairs'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'beyondwords/vim-twig'
 
-" toggle nerdtree
+"key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
 
+let g:phpcomplete_mappings = {
+  \ 'jump_to_def': ',g',
+  \ 'jump_to_def_tabnew': ',t',
+  \ }
 
 call plug#end()
 
