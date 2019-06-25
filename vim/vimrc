@@ -1,27 +1,31 @@
 call plug#begin('~/.vim/plugged')
 
-
-Plug 'tpope/vim-fugitive'
-Plug 'git://git.wincent.com/command-t.git'
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-surround'
-Plug 'kien/ctrlp.vim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'airblade/vim-gitgutter'
-Plug 'valloric/youcompleteme'
-Plug 'honza/vim-snippets'
-Plug 'ervandew/supertab'
-Plug 'tpope/vim-repeat'
-Plug 'mattn/emmet-vim'
-Plug 'thaerkh/vim-workspace'
 Plug 'jiangmiao/auto-pairs'
-Plug 'hail2u/vim-css3-syntax'
+
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plug 'google/vim-glaive'
 
 "key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
 
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer yapf
+  " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
 
 call plug#end()
 
