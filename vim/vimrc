@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'kien/ctrlp.vim'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
