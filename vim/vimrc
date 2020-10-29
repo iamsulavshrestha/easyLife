@@ -36,14 +36,16 @@ Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
-
+" color schemes
 Plug 'morhetz/gruvbox'
+"Plug 'ParamagicDev/vim-medic_chalk'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 "key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
 :set number
+:set bg=dark
 "keymap for fzf
 map ; :Files<CR> 
 " gitgutter keymap
