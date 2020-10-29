@@ -1,7 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'airblade/vim-gitgutter'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'mattn/emmet-vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-eunuch'
+Plug 'w0rp/ale'
+" Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
@@ -15,6 +23,8 @@ Plug 'google/vim-glaive'
 "key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
 :set number
+"keymap for fzf
+map ; :Files<CR> 
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
