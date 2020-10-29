@@ -25,6 +25,10 @@ nmap <F6> :NERDTreeToggle<CR>
 :set number
 "keymap for fzf
 map ; :Files<CR> 
+nmap ]c <Plug>GitGutterNextHunk
+nmap [c <Plug>GitGutterPrevHunk
+nmap <Leader>hs <Plug>GitGutterStageHunk
+nmap <Leader>hu <Plug>GitGutterUndoHunk
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
