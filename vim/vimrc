@@ -14,6 +14,7 @@ Plug 'google/vim-glaive'
 
 "key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
+:set number
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
