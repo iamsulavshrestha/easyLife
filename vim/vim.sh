@@ -8,5 +8,5 @@ if [ -e "$HOME/.vimrc" ]; then
     rm "$HOME/.vimrc"
 fi
 
-    cp "$PWD/vimrc" ~/.vimrc
+    cp "$PWD/vim/vimrc" ~/.vimrc
     vim +PlugInstall
