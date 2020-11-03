@@ -1,4 +1,6 @@
 call plug#begin('~/.vim/plugged')
+
+"Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
@@ -31,7 +33,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
@@ -40,8 +42,15 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
 "Plug 'ParamagicDev/vim-medic_chalk'
 
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'tobyS/pdv'
+Plug 'tobyS/vmustache'
+"let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates_snip"
+" PHP documenter script bound to Control-P
+autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>
+autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR>
+nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 "key map for nerdtree
 nmap <F6> :NERDTreeToggle<CR>
 :set number
@@ -53,6 +62,11 @@ nmap ]c <Plug>GitGutterNextHunk
 nmap [c <Plug>GitGutterPrevHunk
 nmap <Leader>hs <Plug>GitGutterStageHunk
 nmap <Leader>hu <Plug>GitGutterUndoHunk
+" split view navigation keymap
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 augroup autoformat_settings
   autocmd FileType bzl AutoFormatBuffer buildifier
@@ -108,7 +122,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 
 " ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
