@@ -38,6 +38,7 @@ Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'wakatime/vim-wakatime'
 " color schemes
 Plug 'morhetz/gruvbox'
 "Plug 'ParamagicDev/vim-medic_chalk'
