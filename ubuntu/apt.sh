@@ -1,3 +1,3 @@
 apt update -y &&
 apt upgrade -y &&
-apt install -y nodejs git php yarn composer
+apt install -y git nodejs php yarn apache2 php mariadb sqlite
