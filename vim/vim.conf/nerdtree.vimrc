@@ -6,8 +6,8 @@ inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
 
 " open NERDTree automatically
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * NERDTree
 
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
