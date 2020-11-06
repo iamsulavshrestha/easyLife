@@ -10,7 +10,7 @@ let g:coc_global_extensions = [
   \ 'coc-html',
   \ 'coc-json',
   \ 'coc-css',
-  \ 'coc-cssmodule',
+  \ 'coc-cssmodules',
   \ 'coc-tailwindcss',
   \ 'coc-yaml',
   \ ]
