@@ -10,7 +10,6 @@ set shiftwidth=2
 set expandtab
 
 colorscheme gruvbox
-
 " emmet keymap
 let g:user_emmet_expandabbr_key = '<c-e>'
 

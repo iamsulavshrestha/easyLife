@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -8,6 +7,7 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'wakatime/vim-wakatime'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'google/vim-maktaba'
@@ -22,7 +22,6 @@ Plug 'morhetz/gruvbox'
 "Plug 'airblade/vim-gitgutter'
 "Plug 'editorconfig/editorconfig-vim'
 
-"Plug 'terryma/vim-multiple-cursors'
 "Plug 'tpope/vim-eunuch'
 "Plug 'w0rp/ale'
 "Plug 'tpope/vim-surround'
@@ -38,7 +37,6 @@ Plug 'morhetz/gruvbox'
 "Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 "Plug 'ryanoasis/vim-devicons'
 "Plug 'airblade/vim-gitgutter'
-"Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
@@ -50,3 +48,4 @@ source ~/.vim/vim.conf/nerdtree.vimrc
 source ~/.vim/vim.conf/prettier.vimrc
 source ~/.vim/vim.conf/lightline.vimrc
 source ~/.vim/vim.conf/codefmt.vimrc
+source ~/.vim/vim.conf/nerdcommenter.vimrc
