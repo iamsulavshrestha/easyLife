@@ -5,4 +5,4 @@ php -r "unlink('composer-setup.php');"
 mkdir $HOME/.local/
 mkdir $HOME/.local/bin
 mv composer.phar $HOME/.local/bin/composer
-cp $PWD/ubuntu/bash_profile $HOME/.bash_profile
+cp $PWD/files/bash_profile $HOME/.bash_profile
