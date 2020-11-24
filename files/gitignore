@@ -3,3 +3,7 @@
 *.sqlite
 *.data
 *.db
+vendor/
+.idea/
+.swp
+tmp/
