@@ -1,0 +1,21 @@
+[credential]
+	helper = cache --timeout=78600
+[help]
+	autocorrect = 1
+[user]
+	email = connect@sulav.name.np
+	name = Sulav Shrestha
+[core]
+	excludesfile = /data/data/com.termux/files/home/.gitignore_global
+[alias]
+  p = push
+  st = status -sb
+  ll = log --oneline
+  lc = log -1 HEAD --stat
+  cm = commit -m
+  rv = remote -v
+  d = diff
+  dv = difftool -t vimdiff -y
+  gl = config --global -l
+  se = !git rev-list --all | xargs git grep -F
+
