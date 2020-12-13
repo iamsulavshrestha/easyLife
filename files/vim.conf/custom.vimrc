@@ -1,6 +1,6 @@
 " vim editor configs
-:set number
-:set bg=dark
+set number
+set bg=dark
 set relativenumber
 set smarttab
 set cindent
@@ -15,6 +15,10 @@ let g:user_emmet_expandabbr_key = '<c-e>'
 
 "keymap for fzf
 map ; :Files<CR> 
+"keymap for tabs
+map <C-T> :tabnew<CR> 
+map <S-Tab> :tabp<CR> 
+map <C-Tab> :tabn<CR> 
 
 " split view navigation keymap
 nnoremap <C-J> <C-W><C-J>
@@ -27,3 +31,4 @@ noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+

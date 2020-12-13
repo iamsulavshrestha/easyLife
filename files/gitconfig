@@ -9,6 +9,7 @@
 	excludesfile = /data/data/com.termux/files/home/.gitignore_global
 [alias]
   p = push
+  ba = branch -a
   st = status -sb
   ll = log --oneline
   lc = log -1 HEAD --stat
