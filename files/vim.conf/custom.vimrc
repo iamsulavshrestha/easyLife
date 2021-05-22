@@ -14,7 +14,7 @@ colorscheme gruvbox
 let g:user_emmet_expandabbr_key = '<c-e>'
 
 "keymap for fzf
-map ; :Files<CR> 
+map ; :GFiles<CR> 
 "keymap for tabs
 map <C-T> :tabnew<CR> 
 map <S-Tab> :tabp<CR> 

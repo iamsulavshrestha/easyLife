@@ -1,5 +1,5 @@
 "key map for nerdtree
-nmap <F6> :NERDTreeToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
 
 
 inoremap jk <ESC>
