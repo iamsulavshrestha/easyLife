@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'puremourning/vimspector'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -17,6 +18,7 @@ Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 " color schemes
 Plug 'morhetz/gruvbox'
+Plug 'dhruvasagar/vim-table-mode'
 "Plug 'phpactor/phpactor'
 "Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 "Plug 'airblade/vim-gitgutter'
@@ -49,4 +51,5 @@ source ~/.vim/vim.conf/prettier.vimrc
 source ~/.vim/vim.conf/lightline.vimrc
 "source ~/.vim/vim.conf/codefmt.vimrc
 source ~/.vim/vim.conf/nerdcommenter.vimrc
+source ~/.vim/vim.conf/vimspector.vimrc
 

@@ -3,7 +3,7 @@
 [help]
 	autocorrect = 1
 [user]
-	email = connect@sulav.name.np
+	email = iamsulavshrestha@gmail.com
 	name = Sulav Shrestha
 [core]
 	excludesfile = /data/data/com.termux/files/home/.gitignore_global
