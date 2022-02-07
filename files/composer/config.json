@@ -1,0 +1,20 @@
+{
+  "repositories":[
+    {
+      "type":"vcs",
+      "url":"git@github.com:iamsulavshrestha/lara-starter.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:iamsulavshrestha/lara-setting.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:iamsulavshrestha/lara-post.git"
+    },
+    {
+      "type":"vcs",
+      "url":"git@github.com:iamsulavshrestha/lara-admin.git"
+    }
+  ]
+}

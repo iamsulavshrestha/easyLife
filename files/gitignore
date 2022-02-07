@@ -3,3 +3,11 @@
 *.sqlite
 *.data
 *.db
+vendor/
+.idea/
+.swp
+tmp/
+*.tmp
+packages/
+package-lock.json
+node_modules/
