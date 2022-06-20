@@ -7,9 +7,11 @@ apt-cache policy docker-ce
 apt install -y docker-ce docker-compose
 usermod -aG docker $USER
 echo "Remember to logout to work properly"
+##dockApps=("mariadb" "node" "httpd:alpine" "alpine" "docker" "swarm" "nginx" "redis" "ubuntu" "mysql" "mongo" "memcached" "wordpress" "ruby" "python" "php" "jenkins" "haproxy" "drupal" "joomla" "mono" "gradle" "couchbase" "composer")
+dockApps=("node" "mysql" "apacheignite/ignite" "postgres")
 ## now loop through the above array
-##for i in "mariadb" "node" "httpd:alpine" "alpine" "docker" "swarm" "nginx" "redis" "ubuntu" "mysql" "mongo" "memcached" "wordpress" "ruby" "python" "php" "jenkins" "haproxy" "drupal" "joomla" "mono" "gradle" "couchbase" "composer"
-##do
-       docker pull "$i"
+for i in ${dockApps[@]}; 
+do
+   docker pull "$i"
           # or do whatever with individual element of the array
-##done     
+done     
