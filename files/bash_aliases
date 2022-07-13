@@ -1,0 +1,41 @@
+
+
+alias gf="git flow "
+# laravel related 
+alias pa="php artisan "
+alias pat="php artisan test "
+alias pao="php artisan optimize "
+alias pam="php artisan migrate:fresh --seed "
+alias lumen="composer create-project --prefer-dist laravel/lumen "
+#symfony related
+alias pc="php bin/console "
+# phpunit related
+alias pu="vendor/bin/phpunit "
+alias puf="vendor/bin/phpunit --filter " 
+alias putu="vendor/bin/phpunit --testsuite Unit "
+alias putf="vendor/bin/phpunit --testsuite Feature "
+
+# git related
+alias gs="git status "
+alias gd="git diff "
+alias gdc="git diff --cached "
+alias gb="git branch "
+alias gc="git commit "
+alias gca="git commit -a "
+alias gcam="git commit -am "
+alias gco="git checkout "
+alias gcb="git checkout -b "
+alias gcp="git cherry-pick "
+alias gpl="git pull "
+alias gps="git push "
+alias gpsa="git push --all "
+alias gpsu="git push --tags "
+alias gpsb="git push --branch "
+alias gr="git remote -v "
+alias gra="git remote add "
+alias grr="git remote rm "
+alias gcl="git clone "
+alias gcb="git clone --branch "
+alias gcbl="git clone --branch "
+alias gclo="git clone --origin "
+alias gclob="git clone --origin --branch "
