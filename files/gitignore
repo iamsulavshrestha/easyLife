@@ -11,3 +11,14 @@ tmp/
 packages/
 package-lock.json
 node_modules/
+.env
+.project
+target/
+.run/
+/application.yml
+!**/resources/application.yml
+**/resources/application-*.yml
+*.cache
+mvnRun.sh
+.metadata
+docker-compose.yml
