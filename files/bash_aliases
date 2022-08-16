@@ -1,12 +1,13 @@
 
 
-alias gf="git flow "
 # laravel related 
+alias pac="php artisan cache:clear && php artisan config:cache && php artisan view:cache && php artisan route:cache" 
 alias pa="php artisan "
 alias pat="php artisan test "
 alias pao="php artisan optimize "
 alias pam="php artisan migrate:fresh --seed "
 alias lumen="composer create-project --prefer-dist laravel/lumen "
+alias sail='[ -f sail ] && sh sail || sh ./vendor/bin/sail'
 #symfony related
 alias pc="php bin/console "
 # phpunit related
@@ -16,6 +17,7 @@ alias putu="vendor/bin/phpunit --testsuite Unit "
 alias putf="vendor/bin/phpunit --testsuite Feature "
 
 # git related
+alias gf="git fetch "
 alias gs="git status "
 alias gd="git diff "
 alias gdc="git diff --cached "
@@ -27,6 +29,7 @@ alias gco="git checkout "
 alias gcb="git checkout -b "
 alias gcp="git cherry-pick "
 alias gpl="git pull "
+alias gplm="git pull origin master "
 alias gps="git push "
 alias gpsa="git push --all "
 alias gpsu="git push --tags "
@@ -35,7 +38,6 @@ alias gr="git remote -v "
 alias gra="git remote add "
 alias grr="git remote rm "
 alias gcl="git clone "
-alias gcb="git clone --branch "
-alias gcbl="git clone --branch "
+alias gclb="git clone --branch "
 alias gclo="git clone --origin "
 alias gclob="git clone --origin --branch "
