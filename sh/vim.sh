@@ -7,6 +7,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 if [ -e "$HOME/.vimrc" ]; then
     rm "$HOME/.vimrc"
 fi
-    cp -r "$PWD/files/vim.conf" ~/.vim/
+    mkdir ~/.vim/vim.conf
+    cp -r "$PWD/files/vim.conf" ~/.vim
     cp "$PWD/files/vimrc" ~/.vimrc
     vim +PlugInstall
