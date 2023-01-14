@@ -11,3 +11,5 @@ fi
     cp -r "$PWD/files/vim.conf" ~/.vim
     cp "$PWD/files/vimrc" ~/.vimrc
     vim +PlugInstall
+
+cd ~/.vim/plugged/youcompleteme && python3 install.py --all
