@@ -28,7 +28,7 @@ Plug 'dhruvasagar/vim-table-mode'
 "Plug 'w0rp/ale'
 "Plug 'tpope/vim-surround'
 "Plug 'jiangmiao/auto-pairs'
-" Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 
 
 " plugins from youtube
