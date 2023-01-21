@@ -21,4 +21,4 @@ target/
 *.cache
 mvnRun.sh
 .metadata
-docker-compose.yml
+docker-compose.override.yml
