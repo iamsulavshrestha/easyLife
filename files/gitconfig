@@ -6,7 +6,8 @@
 	email = iamsulavshrestha@gmail.com
 	name = Sulav Shrestha
 [core]
-	excludesfile = /data/data/com.termux/files/home/.gitignore_global
+	excludesfile = /Users/sulav/.gitignore_global
+	autocrlf = input
 [alias]
   p = push
   ba = branch -a
@@ -20,3 +21,5 @@
   gl = config --global -l
   se = !git rev-list --all | xargs git grep -F
 
+[push]
+	autoSetupRemote = true
