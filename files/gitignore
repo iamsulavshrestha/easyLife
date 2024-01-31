@@ -1,4 +1,4 @@
-*.bak
+*bak
 *.log
 *.sqlite
 *.data
@@ -24,3 +24,6 @@ mvnRun.sh
 docker-compose.override.yml
 !docker-compose.yml
 docker-compose-*.yml
+logs/
+.DS_Store
+.vs
