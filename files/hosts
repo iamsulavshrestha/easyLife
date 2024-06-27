@@ -1,0 +1,12 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+#127.0.0.1	localhost wordpress.example.com jellyfin.sulav.name.np nextcloud.sulav.name.np loco-lab.sulav.name.np transmission.sulav.name.np plex.sulav.name.np archiva.sulav.name.np
+255.255.255.255	broadcasthost
+::1             localhost
+192.168.20.34 pi.local 
+192.168.20.34 jellyfin.sulav.name.np nextcloud.sulav.name.np loco-lab.sulav.name.np transmission.sulav.name.np plex.sulav.name.np archiva.sulav.name.np jenkins.sulav.name.np
